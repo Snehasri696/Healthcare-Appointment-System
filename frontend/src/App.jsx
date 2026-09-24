@@ -20,7 +20,7 @@ function App() {
 
   // Get patients, doctors and appointments
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/patients/")
+    fetch("https://healthcare-appointment-system-vxr9.onrender.com/api/patients/")
       .then((response) => response.json())
       .then((data) => {
         setPatients(data);
@@ -29,7 +29,7 @@ function App() {
         console.error("Patient Error:", error);
       });
 
-    fetch("http://127.0.0.1:8000/api/doctors/")
+    fetch("https://healthcare-appointment-system-vxr9.onrender.com/api/doctors/")
       .then((response) => response.json())
       .then((data) => {
         setDoctors(data);
@@ -38,7 +38,7 @@ function App() {
         console.error("Doctor Error:", error);
       });
 
-    fetch("http://127.0.0.1:8000/api/appointments/")
+    fetch("https://healthcare-appointment-system-vxr9.onrender.com/api/appointments/")
       .then((response) => response.json())
       .then((data) => {
         setAppointments(data);
@@ -68,7 +68,7 @@ function App() {
       status: "Scheduled",
     };
 
-    fetch("http://127.0.0.1:8000/api/appointments/create/", {
+    fetch("https://healthcare-appointment-system-vxr9.onrender.com/api/appointments/create/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -116,7 +116,7 @@ function App() {
     }
 
     fetch(
-      `http://127.0.0.1:8000/api/appointments/${appointmentId}/cancel/`,
+      `https://healthcare-appointment-system-vxr9.onrender.com/api/appointments/${appointmentId}/cancel/`,
       {
         method: "PATCH",
         headers: {
@@ -165,7 +165,7 @@ function App() {
     }
 
     fetch(
-      `http://127.0.0.1:8000/api/appointments/${rescheduleId}/reschedule/`,
+      `https://healthcare-appointment-system-vxr9.onrender.com/api/appointments/${rescheduleId}/reschedule/`,
       {
         method: "PATCH",
         headers: {
