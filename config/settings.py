@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*vbmf-9yfkfvl%iigl_m_dw979u-0p*soum(oq55_iu-$j@0n0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["healthcare-appointment-system-vxr9.onrender.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
