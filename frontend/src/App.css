@@ -1,0 +1,249 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f8fb;
+  color: #333;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 1100px;
+  margin: auto;
+  padding: 25px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 18px 25px;
+  border-radius: 12px;
+  margin-bottom: 35px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar h2 {
+  color: #0b5ed7;
+  margin: 0;
+}
+
+.navbar button {
+  background: transparent;
+  color: #333;
+  border: none;
+  margin-left: 8px;
+  padding: 9px 14px;
+  border-radius: 6px;
+}
+
+.navbar button:hover {
+  background: #e7f1ff;
+  color: #0b5ed7;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1 {
+  color: #0b5ed7;
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.welcome {
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #0b5ed7;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+  background: #0b5ed7;
+  color: white;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 5px;
+}
+
+button:hover {
+  background: #084298;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+  background: white;
+  padding: 28px;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.section label {
+  font-weight: bold;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+.section select,
+.section input {
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+}
+
+.section select {
+  width: 300px;
+}
+
+.section input {
+  width: 270px;
+}
+
+.section select:focus,
+.section input:focus {
+  border-color: #0b5ed7;
+}
+
+
+/* =========================
+   DOCTORS
+========================= */
+
+.doctor-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.doctor-specialization {
+  color: #0b5ed7;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+
+/* =========================
+   APPOINTMENTS
+========================= */
+
+.appointment-card {
+  background: #f8fbff;
+  padding: 22px;
+  margin-top: 18px;
+  border-radius: 10px;
+  border-left: 5px solid #0b5ed7;
+}
+
+.appointment-card p {
+  margin: 9px 0;
+  font-size: 16px;
+}
+
+.appointment-card strong {
+  color: #333;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status-badge {
+  background: #d1e7dd;
+  color: #0f5132;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 25px;
+  color: #777;
+  font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .app {
+    padding: 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar button {
+    margin: 3px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .section select,
+  .section input {
+    width: 100%;
+  }
+
+  button {
+    width: auto;
+  }
+}
